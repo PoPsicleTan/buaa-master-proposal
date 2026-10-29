@@ -11,7 +11,9 @@
 这是学生维护的非官方模板。章节组织和版式是可修改的起点，提交时以所在学院当年的开题要求为准。
 默认使用 TeX Live 自带的 Fandol 中文字体；仓库不附带商业字体、个人开题正文或论文附件。
 
-![封面与正文预览](docs/preview.png)
+以下为作者原报告封面的公开展示图，姓名、导师与题目已替换为示例信息。
+
+<img src="docs/cover-preview.png" alt="开题报告封面示意：popsicletan，LLM教授" width="540">
 
 [查看完整示例 PDF](docs/example.pdf) · [写作与排版说明](docs/WRITING.md) · [来源说明](docs/ORIGIN.md)
 
