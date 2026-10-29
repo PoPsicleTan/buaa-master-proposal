@@ -1,0 +1,41 @@
+% !TeX root = ../examples-original.tex
+% Compatibility definitions by popsicletan; original example chapters stay intact.
+% These commands support the demonstration only and do not change main.tex.
+\usepackage{amsthm}
+\usepackage{algorithm2e}
+\usepackage{listings,pifont,multirow}
+% Fit the old command-reference tables without changing their source text.
+\AtBeginEnvironment{tabular}{\small}
+\setlength{\emergencystretch}{2em}
+\providecommand{\CTeX}{CTeX}
+\providecommand{\BUAAThesis}{BUAAThesis}
+\providecommand{\BUAAThesisVer}{v4.1.0}
+\providecommand{\upcite}[1]{\textsuperscript{\citep{#1}}}
+\providecommand{\eu}{\mathrm{e}}
+\providecommand{\iu}{\mathrm{i}}
+\providecommand{\diff}{\mathop{}\!\mathrm{d}}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\newtheoremstyle{originalexample}{3pt}{3pt}{\normalfont}{}{\bfseries}{.}{0.5em}{}
+\theoremstyle{originalexample}
+\newtheorem{theorem}{定理}[chapter]
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{corollary}[theorem]{推论}
+\newtheorem{proposition}[theorem]{命题}
+\newtheorem{definition}{定义}[chapter]
+\newtheorem{example}{例}[chapter]
+\newtheorem*{remark}{注}
+\renewcommand{\proofname}{证明}
+\renewcommand{\algorithmcfname}{算法}
+\newcommand{\chaptera}[1]{\chapter*{#1}\phantomsection\addcontentsline{toc}{chapter}{#1}}
+\newcommand{\summary}{\chaptera{总结}}
+\newcommand{\achievement}{\chaptera{攻读学位期间取得的成果}}
+\newcommand{\acknowledgments}{\chaptera{致谢}}
+\newcommand{\biography}{\chaptera{作者简介}}
+\let\originalexampleappendix\appendix
+\renewcommand{\appendix}{%
+  \originalexampleappendix
+  \renewcommand{\thefigure}{\Alph{chapter}.\arabic{figure}}%
+  \renewcommand{\thetable}{\Alph{chapter}.\arabic{table}}%
+  \renewcommand{\theequation}{\Alph{chapter}.\arabic{equation}}%
+}

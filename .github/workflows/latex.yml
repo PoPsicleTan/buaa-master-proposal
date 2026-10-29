@@ -16,14 +16,21 @@ jobs:
       - name: Install TeX dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends latexmk texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra fonts-texgyre poppler-utils
+          sudo apt-get install -y --no-install-recommends latexmk texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra texlive-science fonts-texgyre ghostscript poppler-utils
       - name: Compile default template
         run: latexmk -xelatex main.tex
       - name: Check representative options
         run: python3 scripts/check-options.py
+      - name: Verify and compile original examples
+        run: |
+          python3 scripts/check-original-examples.py
+          latexmk -xelatex examples-original.tex
+          python3 scripts/check-original-examples.py --compiled
       - uses: actions/upload-artifact@v7
         with:
           name: proposal-pdf
-          path: main.pdf
+          path: |
+            main.pdf
+            examples-original.pdf
           if-no-files-found: error
           retention-days: 14

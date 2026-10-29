@@ -37,3 +37,10 @@
 
 根目录 [LICENSE](LICENSE) 适用于本整理版新增材料。
 原模板、依赖宏包和字体的原作者署名与各自许可分别保留。
+
+## 保留的原始示例
+
+`examples/tex/` 中的 7 个原模板章节及 `figures/examples/` 中的原示例图片按原样保留，
+沿用上述原作者和版本线索。`examples/ref.bib` 是公开上游固定提交中的示例书目。
+来源与文件摘要见 [examples/SOURCES.json](examples/SOURCES.json)。
+`examples-original.tex`、`examples/compatibility.tex` 和示例说明是本整理版新增材料。

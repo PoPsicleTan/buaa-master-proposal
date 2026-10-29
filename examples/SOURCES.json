@@ -1,0 +1,76 @@
+{
+  "description": "Unmodified original example snapshots; compatibility entry points are maintained separately.",
+  "files": [
+    {
+      "path": "examples/tex/chap_achievement.tex",
+      "sha256": "166b372dfd6b70db9502a9b455a92cde2c4a7fd471b7257b1842a86b4af5937f",
+      "source": "Original project retained BUAAThesis v4.1.0 examples",
+      "original_path": "examples/tex/chap_achievement.tex"
+    },
+    {
+      "path": "examples/tex/chap_acknowledge.tex",
+      "sha256": "f43a594d4d122b0593a7ac67927d4d0d1bab2b8648746e3955e653139b680b24",
+      "source": "Original project retained BUAAThesis v4.1.0 examples",
+      "original_path": "examples/tex/chap_acknowledge.tex"
+    },
+    {
+      "path": "examples/tex/chap_appendix.tex",
+      "sha256": "8f378e4100593b2a0dbe56f98b1ecb10f1aee69479837660cc92e2f3176c3346",
+      "source": "Original project retained BUAAThesis v4.1.0 examples",
+      "original_path": "examples/tex/chap_appendix.tex"
+    },
+    {
+      "path": "examples/tex/chap_biography.tex",
+      "sha256": "ccac80bf8703d5a2e1c0d6285953a86808a55fe46d01c0b816d84efb52da8593",
+      "source": "Original project retained BUAAThesis v4.1.0 examples",
+      "original_path": "examples/tex/chap_biography.tex"
+    },
+    {
+      "path": "examples/tex/chap_instruction.tex",
+      "sha256": "331668397257ad484cb90f3c39be223dac70a3fc14e8347800b6e14d5402e730",
+      "source": "Original project retained BUAAThesis v4.1.0 examples",
+      "original_path": "examples/tex/chap_instruction.tex"
+    },
+    {
+      "path": "examples/tex/chap_sample.tex",
+      "sha256": "7896cdb92877fa0c8281325ab71a1e52eaf029765554a521b2f2a502454e13bf",
+      "source": "Original project retained BUAAThesis v4.1.0 examples",
+      "original_path": "examples/tex/chap_sample.tex"
+    },
+    {
+      "path": "examples/tex/chap_summary.tex",
+      "sha256": "6f143bb0bb3622e6263f010116f80c63c07627d0b147ac27f0f2bde40fd20a5e",
+      "source": "Original project retained BUAAThesis v4.1.0 examples",
+      "original_path": "examples/tex/chap_summary.tex"
+    },
+    {
+      "path": "figures/examples/buaa-mark.jpg",
+      "sha256": "c609d25f434ae737748a927d2fcc2e66553c507490fb3c32319d39233be4c4ba",
+      "source": "Original project retained BUAAThesis v4.1.0 examples",
+      "original_path": "figures/examples/buaa-mark.jpg"
+    },
+    {
+      "path": "figures/examples/logo-buaa.eps",
+      "sha256": "0a5385b913aae334da7fa2b5d69ea0ace06ad44803be8916f706c4fcb10a37d9",
+      "source": "Original project retained BUAAThesis v4.1.0 examples",
+      "original_path": "figures/examples/logo-buaa.eps"
+    },
+    {
+      "path": "figures/examples/question_survey.jpg",
+      "sha256": "5e76d58375dffeb08da5d2c48c8ea8eeb7011d192c1ab3219eabced93183dc6b",
+      "source": "Original project retained BUAAThesis v4.1.0 examples",
+      "original_path": "figures/examples/question_survey.jpg"
+    },
+    {
+      "path": "examples/ref.bib",
+      "sha256": "beed0ef2ba5601f72982119de94fca497e52a6cec1f78a2ff989b80fa3c49c64",
+      "source": "https://github.com/CheckBoxStudio/BUAAThesis/blob/2033aed941263a57a10a06c438e0d014bed677e8/ref.bib"
+    },
+    {
+      "path": "examples/ref-v4.1-supplement.bib",
+      "sha256": "c64683af8d7b92cccdc05b40bb56341837cca59357962f067b676c1193d88d93",
+      "source": "Original project bibliography/ref.bib; zhudaoqian entry required by chap_sample.tex",
+      "operation": "Extracted one original example entry; personal research entries are not included."
+    }
+  ]
+}

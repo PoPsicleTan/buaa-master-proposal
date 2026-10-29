@@ -15,6 +15,10 @@
 
 [查看完整示例 PDF](docs/example.pdf) · [写作与排版说明](docs/WRITING.md) · [来源说明](docs/ORIGIN.md)
 
+原模板的 7 个示例章节及配套图片、文献也已保留，见 [原始示例说明](examples/README.md)。
+在项目根目录运行 `latexmk -xelatex examples-original.tex` 可生成原章节的演示版本，
+或直接 [查看原章节示例 PDF](docs/original-examples.pdf)。
+
 ## 快速开始
 
 1. 下载仓库 ZIP，解压；也可使用 Git 克隆。
@@ -67,13 +71,14 @@ Windows 的 TeX Live 还需要可供 latexmk 调用的 Perl；可直接使用上
 | 选项 | 默认值 | 可选值与作用 |
 | --- | --- | --- |
 | `degree` | `academic` | `academic`：学术学位硕士；`professional`：专业学位硕士。改变封面的学位类型和专业标签 |
-| `layout` | `print` | `print`：封面后、整个目录后各插入一张无页眉页脚的空白页；`electronic`：不插入 |
+| `layout` | `print` | `print`：封面后留白，目录为奇数页时补一张空白页；目录为偶数页时不补；`electronic`：不插入 |
 | `subject` | `STEM` | `STEM`：理工类，第1章、1.1、1.1.1；`HSS`：人文社科类，一、（一）、1、 |
 | `fontset` | `fandol` | `fandol`：TeX Live 自带字体；`windows`/`mac`：CTeX 对应系统字体配置；`none`：自行配置 |
 | `colorlinks` | `false` | `true`：彩色链接；`false`：黑色无框链接。两种都能点击 |
 | `longtitle` | `false` | `true`：封面题目改用较小字号，适合较长题目；仍应检查换行 |
 
-打印模式沿用整理前开题稿的两处固定空白页，**不强制每章从奇数页开始**，也不根据目录页数自动补齐双面奇偶页。
+打印模式下，目录为 1 页时补一页空白，为 2 页时直接接正文；更多页按相同的奇偶规则处理。
+封面后保留一页空白，使目录从右页开始；正文各章不强制从奇数页开始。
 目录使用大写罗马页码；正文从阿拉伯数字 1 开始；封面和空白页不显示页码。
 正文和参考文献使用统一页眉“北京航空航天大学硕士开题报告”。
 
@@ -108,6 +113,7 @@ Fandol 用于便捷编译，字形与 Windows 宋体、黑体不完全相同；�
 ```text
 .
 ├── main.tex                    # 主入口与模板选项
+├── examples-original.tex       # 原模板示例演示入口
 ├── buaa-proposal.cls            # 硕士开题专用类
 ├── config/
 │   ├── info.tex                # 个人信息
@@ -120,6 +126,7 @@ Fandol 用于便捷编译，字形与 Windows 宋体、黑体不完全相同；�
 │   └── 05-schedule.tex         # 研究计划与预期成果
 ├── bibliography/references.bib # 示例文献
 ├── figures/                    # 自己的插图
+├── examples/                   # 原始示例章节、书目、来源摘要和兼容定义
 ├── docs/                       # 写作说明、来源和示例预览
 ├── .github/workflows/latex.yml # 自动编译与选项检查
 ├── .latexmkrc                  # 编译配置
@@ -127,7 +134,8 @@ Fandol 用于便捷编译，字形与 Windows 宋体、黑体不完全相同；�
 ```
 
 章节可增删、合并或重命名，并同步修改 `main.tex` 中的 `\input`。
-模板没有内置英文封面、声明、中英文摘要、成果列表等毕业论文模块；也不兼容原 `buaa.cls` 的全部命令。
+开题主入口不生成英文封面、声明、中英文摘要或毕业论文附加页。
+原模板的总结、附录、成果、致谢与作者简介示例保存在 `examples/`，由示例入口演示。
 正文示例是填写提示，示例文献只是排版演示，请在提交前逐项替换。
 
 ## 常见问题
@@ -153,7 +161,7 @@ cd buaa-master-proposal
 仓库中的默认个人信息、示例 PDF、图片和文献为公开示例。对外分享自己修改后的版本时，请检查个人信息。
 `.gitignore` 排除编译缓存和字体文件，但不会识别写入 `.tex` 的个人信息。
 
-GitHub Actions 会编译默认模板，并检查专硕、人文社科、电子版和自定义字体选项；PDF 从该次运行的 Artifacts 下载。
+GitHub Actions 会编译默认模板及原章节示例，并检查专硕、人文社科、自定义字体和目录分页；PDF 从该次运行的 Artifacts 下载。
 该工作流仅构建文件，不自动提交 PDF、不创建 Release。修订格式时请附上最小复现、编译器版本与 PDF 截图。
 
 维护者可运行 `python scripts/check-options.py` 检查配置。该脚本需要 Python 3 和 latexmk；

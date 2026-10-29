@@ -1,0 +1,17 @@
+% !TeX program = xelatex
+% 本入口由 popsicletan 添加；examples/tex 中保留原模板的示例原文。
+% 在项目根目录编译：latexmk -xelatex examples-original.tex
+\documentclass[degree=academic,layout=print,subject=STEM,fontset=fandol]{buaa-proposal}
+\input{config/info}
+\input{examples/compatibility}
+\begin{document}
+\makeproposalfrontmatter
+\input{examples/tex/chap_instruction}
+\input{examples/tex/chap_sample}
+\input{examples/tex/chap_summary}
+\proposalbibliography{examples/ref,examples/ref-v4.1-supplement}
+\input{examples/tex/chap_appendix}
+\input{examples/tex/chap_achievement}
+\input{examples/tex/chap_acknowledge}
+\input{examples/tex/chap_biography}
+\end{document}

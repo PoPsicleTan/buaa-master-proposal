@@ -6,3 +6,8 @@
 *.yml text eol=lf
 *.pdf binary
 *.png binary
+# Keep original example snapshots byte-for-byte, including their line endings.
+examples/tex/*.tex -text
+examples/ref.bib -text
+examples/ref-v4.1-supplement.bib -text
+figures/examples/* -text

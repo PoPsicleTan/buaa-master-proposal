@@ -7,7 +7,7 @@
 % Prior authorship, original license and change scope: NOTICE.md, docs/ORIGIN.md.
 % This new class is maintained by popsicletan; prior credits remain in place.
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{buaa-proposal}[2026/10/30 v1.0.0 BUAA master proposal]
+\ProvidesClass{buaa-proposal}[2026/10/30 v1.1.0 BUAA master proposal]
 \RequirePackage{iftex}
 \RequireXeTeX
 \RequirePackage{kvoptions}
@@ -176,7 +176,10 @@
   \pagenumbering{Roman}\pagestyle{proposal}
   \pdfbookmark[0]{目录}{proposal.contents}
   \begingroup\setstretch{1.25}\tableofcontents\clearpage\endgroup
-  \proposal@blankpage
+  % After clearpage, page is one beyond the last Roman-numbered TOC page.
+  % Pad an odd-length TOC only: two TOC pages already occupy a full sheet.
+  \typeout{BUAA-PROPOSAL-TOC-PAGES=\number\numexpr\value{page}-1\relax}
+  \ifodd\value{page}\else\proposal@blankpage\fi
   \pagenumbering{arabic}\pagestyle{proposal}
 }
 \apptocmd{\bibsection}{\phantomsection\addcontentsline{toc}{chapter}{参考文献}}{}%
