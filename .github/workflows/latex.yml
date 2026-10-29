@@ -16,7 +16,7 @@ jobs:
       - name: Install TeX dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends latexmk texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra tex-gyre poppler-utils
+          sudo apt-get install -y --no-install-recommends latexmk texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra fonts-texgyre poppler-utils
       - name: Compile default template
         run: latexmk -xelatex main.tex
       - name: Check representative options

@@ -54,7 +54,7 @@ xelatex main.tex
 如果提示 `gbt7714.sty not found`，在自行安装的 TeX Live 中运行 `tlmgr install gbt7714`；
 系统包管理器安装的 TeX Live 应通过对应包管理器补齐组件。
 
-Ubuntu/Debian 的精简安装还需显式安装 `tex-gyre` 包，它提供默认西文所需的 OpenType 字体；
+Ubuntu/Debian 的精简安装还需显式安装 `fonts-texgyre` 包，它提供默认西文所需的 OpenType 字体；
 仅安装 `texlive-fonts-recommended` 并关闭推荐依赖时，可能不会安装该字体包。
 
 Windows 的 TeX Live 还需要可供 latexmk 调用的 Perl；可直接使用上述四条手动编译命令排查。
