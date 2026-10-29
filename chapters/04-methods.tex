@@ -1,0 +1,33 @@
+% !TeX root = ../main.tex
+\chapter{研究方案与可行性分析}
+
+\section{总体技术路线}
+说明从问题定义、方案设计到实验验证的工作流程。
+图\ref{fig:route}为无需外部图片文件的占位示例，可替换为自己绘制的技术路线图。
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\parbox[c][23mm][c]{0.88\linewidth}{\centering
+    问题定义与文献分析\quad$\longrightarrow$\quad 方法设计\\[5pt]
+    原型实现\quad$\longrightarrow$\quad 实验验证与结果分析}}
+  \caption{技术路线占位示例}
+  \label{fig:route}
+\end{figure}
+
+\section{研究方法与实验设计}
+说明数据来源、实验对象、对比方法、控制变量、重复次数和评价指标。
+下面的公式仅演示编号与交叉引用：若比较处理时间，可在相同工作负载下定义相对加速比
+\begin{equation}
+  S = \frac{T_{\mathrm{baseline}}}{T_{\mathrm{proposed}}},
+  \label{eq:speedup}
+\end{equation}
+其中，$T_{\mathrm{baseline}}$ 与 $T_{\mathrm{proposed}}$ 分别表示基线与所提方法的处理时间。
+式\eqref{eq:speedup}的适用条件、测量口径和重复实验策略应在实际报告中说明。
+
+\section{可行性分析与已有基础}
+从理论依据、技术条件、数据与设备资源、已有工作四方面说明可行性。
+如已有初步结果，应提供获取条件和证据；如尚未实现，应明确计划及其依赖条件。
+
+\section{潜在风险与替代方案}
+列出可能影响研究完成的因素，并给出对应的替代数据、简化方案或备用评价方法。
+对于依赖外部平台或设备的研究，应说明资源不可用时的验证路径。

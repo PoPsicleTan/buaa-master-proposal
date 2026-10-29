@@ -1,0 +1,25 @@
+% !TeX program = xelatex
+% 本整理版：popsicletan；原模板作者、来源、许可证与改动见 NOTICE.md 和 docs/ORIGIN.md。
+% 编译：latexmk -xelatex main.tex
+% 常用配置见 README.md；个人信息统一填写 config/info.tex。
+\documentclass[
+  degree=academic,       % academic 学硕；professional 专硕
+  layout=print,          % print 封面和目录后各留一张空白页；electronic 不留
+  subject=STEM,          % STEM 理工类；HSS 人文社科类
+  fontset=fandol,        % 开箱即用；windows / mac / none 见 README
+  colorlinks=false,     % true 为彩色链接；false 为黑色无框链接
+  longtitle=false       % 长标题可改为 true
+]{buaa-proposal}
+
+\input{config/info}
+\input{config/packages}
+
+\begin{document}
+\makeproposalfrontmatter
+\input{chapters/01-background}
+\input{chapters/02-literature}
+\input{chapters/03-objectives}
+\input{chapters/04-methods}
+\input{chapters/05-schedule}
+\proposalbibliography{bibliography/references}
+\end{document}

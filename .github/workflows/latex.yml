@@ -1,0 +1,29 @@
+name: Compile proposal
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  latex:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Install TeX dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends latexmk texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra poppler-utils
+      - name: Compile default template
+        run: latexmk -xelatex main.tex
+      - name: Check representative options
+        run: python3 scripts/check-options.py
+      - uses: actions/upload-artifact@v7
+        with:
+          name: proposal-pdf
+          path: main.pdf
+          if-no-files-found: error
+          retention-days: 14

@@ -1,0 +1,35 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% %% <UTF-8>
+%% %% 北航研究生毕业论文模板 - LaTeX 01-09-2025
+%% %% 论文样式参考自二〇二五年九月版《北京航空航天大学研究生学位论文撰写规范》
+%% %% 基于ctexbook
+%% %%
+%% %% 初始版本作者:
+%% %%   Wei Quanmao (weiqm@buaa.edu.cn)
+%% %% 当前版本作者：
+%% %%   Wei Xiaoyuan (shiaoyuan@buaa.edu.cn)
+%% %% 参与修改:
+%% %%   Cao Yan, Chen Yiwu, Cui Yikai，Dong Hanyuan, Du Huipeng, Fan Yu, Guo Yanpei, Ling Sucheng, Pu Guohang, Sheng Jie, Wu Jiayan, Zhu Leyan, Han Zhexin
+%% %%
+%% %% Versions:
+%% %%   v4.1.0 WeiXY (01-09-2025)
+%% %%   v4.0.2 WeiXY (03-06-2025)
+%% %%   v4.0.1 WeiXY (14-04-2025)
+%% %%   v4.0.0 WeiXY (14-02-2025)
+%% %%   v3.2.4 HanZX WeiXY (11-24-2023)
+%% %%   v3.2.3 HanZX WeiXY (08-30-2023)
+%% %%   v3.2.2 HanZX WeiXY (07-23-2023)
+%% %%   v3.2.1 HanZX WeiXY (06-05-2023)
+%% %%   v3.2  HanZX WeiXY (05-09-2023)
+%% %%   v3.1  WeiQM (01-24-2022)
+%% %%   v3.0  WeiQM (03-07-2020)
+%% %%   v2.2  WeiQM (11-30-2019)
+%% %%   v2.1  QiaoJF, WeiQM (12-19-2018)
+%% %%   v2.0  WeiQM, QiaoJF (11-22-2018)
+%% %%   v1.3  Wei Quanmao (10-15-2018)
+%% %%   v1.2  Wei Quanmao (07-31-2018)
+%% %%   v1.1  Wei Quanmao (01-04-2018)
+%% %%   v1.0a Wei Quanmao (12-17-2017)
+%% %%
+%% %% 建议采用等宽字体查看本文档
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
